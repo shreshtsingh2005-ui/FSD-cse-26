@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch</title>
+    <script>
+        const URL="https://dummyjson.com/products?limit=5&skip=2";
+        const el=document.document.getElementById("data")
+        let rows="";
+        function loadproducts(){
+            try{
+                const res=await (URL);
+                concole.log=("res=",res);
+                const data=await res.json();
+                console.log("data=",data.products);
+            }
+            catch(err){
+                console.log("Error",err);
+            }
+        }
+        loadproduct();
+        data.products.map((i,index)=>(
+           rows+=
+           <tr>
+            <td>${index+1}</td>
+              <td>${i.title}</td>
+              <td>${i.category}</td>
+               <td>${i.rating}</td>
+                <td>${i.}</td>
+            </tr>
+        ))
+        const rows=
+        el.innerHTML=
+    </script>
+    <style>
+        table{
+            border: 2px solid green;
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+       <th>Sr.No.</th>
+       <th>title</th>
+       <th>category</th>
+       <th>rating</th>
+       <th>price</th>
+       <th>stock</th>
+
+        </thead>
+        <tbody id="">
+            <tr>
+
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

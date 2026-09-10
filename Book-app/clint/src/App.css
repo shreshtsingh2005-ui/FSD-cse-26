@@ -1,0 +1,38 @@
+.Header{
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+  color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+
+.Navbar{
+  width: 100vw;
+  height: 4vh;
+  background-color: maroon;
+  color: aqua;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+}
+
+.Footer{
+  width: 100vw;
+  height: 6vh;
+  background-color: black;
+  color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.Homw{
+  width: 100vw;
+  height: 80vh;
+}
